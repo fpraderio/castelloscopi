@@ -1,0 +1,8 @@
+
+per passar els videos a imatges
+
+http://linuxers.org/tutorial/how-extract-images-video-using-ffmpeg
+
+per unir les imatges (CSS spritting)
+
+http://www.phpied.com/command-line-css-spriting/
