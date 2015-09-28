@@ -62,7 +62,7 @@ function init()
 	var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000;
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 	scene.add(camera);
-	camera.position.set(0,150,700);
+	camera.position.set(0,250,800);
 	camera.lookAt(scene.position);	
 	// RENDERER
 	if ( Detector.webgl )
@@ -114,6 +114,19 @@ function init()
 			var castellerTexture = new THREE.ImageUtils.loadTexture( 'images/castellers/'+castellers[i].image);
 
 			casteller_textures[i] = new TextureAnimator( castellerTexture, 64, 1, 64, 200 ); // texture, #horiz, #vert, #total, duration.
+
+			//canvas texture (casteller number)
+			// create a canvas element
+			var canvas1 = document.createElement('canvas');
+			var context1 = canvas1.getContext('2d');
+			context1.font = "Bold 40px Arial";
+			context1.fillStyle = "rgba(129,97,131,0.91)";
+		    context1.fillText(i, 0, 40);
+		    
+			// canvas contents will be used for a texture
+			var texture1 = new THREE.Texture(canvas1) 
+			texture1.needsUpdate = true;
+
 			var materials = []
 			var castellerMaterial = new THREE.MeshBasicMaterial( { map: castellerTexture, side:THREE.DoubleSide, overdraw: true } );
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
@@ -121,7 +134,7 @@ function init()
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 			materials.push(castellerMaterial);
-		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
+		    materials.push(new THREE.MeshBasicMaterial( { map: texture1, color: 0x816183, overdraw: true } ));
 
 			var castellerGeometry = new THREE.CubeGeometry(40, 40, 1, 1, 1, 1 );
 			var facesMaterial = new THREE.MeshFaceMaterial(materials);
