@@ -1,12 +1,15 @@
 [
 	{
 		"id":"0",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"25",
 			"axis_z":"93.3013"
@@ -14,12 +17,15 @@
 	},
      {
 		"id":"1",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0.166667",
+			"rotation_y":"0.166667",
+			"rotation_x":"0",
 			"axis_x":"46.6506",
 			"axis_y":"25",
 			"axis_z":"80.8013"
@@ -27,12 +33,15 @@
 	},
      {
 		"id":"2",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.333333",
+			"rotation_y":"0.333333",
+			"rotation_x":"0",
 			"axis_x":"80.8013",
 			"axis_y":"25",
 			"axis_z":"46.6506"
@@ -40,12 +49,15 @@
 	},
      {
 		"id":"3",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0.5",
+			"rotation_y":"0.5",
+			"rotation_x":"0",
 			"axis_x":"93.3013",
 			"axis_y":"25",
 			"axis_z":"2.75142"
@@ -53,12 +65,15 @@
 	},
      {
 		"id":"4",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"80.8013",
 			"axis_y":"25",
 			"axis_z":"-46.6506"
@@ -66,12 +81,15 @@
 	},
      {
 		"id":"5",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0.833333",
+			"rotation_y":"0.833333",
+			"rotation_x":"0",
 			"axis_x":"46.6506",
 			"axis_y":"25",
 			"axis_z":"-80.8013"
@@ -79,12 +97,15 @@
 	},
      {
 		"id":"6",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1",
+			"rotation_y":"1",
+			"rotation_x":"0",
 			"axis_x":"5.50285e-08",
 			"axis_y":"25",
 			"axis_z":"-93.3013"
@@ -92,12 +113,15 @@
 	},
      {
 		"id":"7",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"1.16667",
+			"rotation_y":"1.16667",
+			"rotation_x":"0",
 			"axis_x":"-46.6506",
 			"axis_y":"25",
 			"axis_z":"-80.8013"
@@ -105,12 +129,15 @@
 	},
      {
 		"id":"8",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-80.8013",
 			"axis_y":"25",
 			"axis_z":"-46.6506"
@@ -118,12 +145,15 @@
 	},
      {
 		"id":"9",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"1.5",
+			"rotation_y":"1.5",
+			"rotation_x":"0",
 			"axis_x":"-93.3013",
 			"axis_y":"25",
 			"axis_z":"-2.75142"
@@ -131,12 +161,15 @@
 	},
      {
 		"id":"10",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.66667",
+			"rotation_y":"1.66667",
+			"rotation_x":"0",
 			"axis_x":"-80.8013",
 			"axis_y":"25",
 			"axis_z":"46.6506"
@@ -144,12 +177,15 @@
 	},
      {
 		"id":"11",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"1.83333",
+			"rotation_y":"1.83333",
+			"rotation_x":"0",
 			"axis_x":"-46.6506",
 			"axis_y":"25",
 			"axis_z":"80.8013"
@@ -157,12 +193,15 @@
 	},
      {
 		"id":"12",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"75",
 			"axis_z":"30"
@@ -170,12 +209,15 @@
 	},
      {
 		"id":"13",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"25.98076064",
 			"axis_y":"75",
 			"axis_z":"-15.00000255"
@@ -183,12 +225,15 @@
 	},
      {
 		"id":"14",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-25.98076064",
 			"axis_y":"75",
 			"axis_z":"-15.00000255"
@@ -196,12 +241,15 @@
 	},
      {
 		"id":"15",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"125",
 			"axis_z":"30"
@@ -209,12 +257,15 @@
 	},
      {
 		"id":"16",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"25.98076064",
 			"axis_y":"125",
 			"axis_z":"-15.00000255"
@@ -222,12 +273,15 @@
 	},
      {
 		"id":"17",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-25.98076064",
 			"axis_y":"125",
 			"axis_z":"-15.00000255"
@@ -235,12 +289,15 @@
 	},
      {
 		"id":"18",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"175",
 			"axis_z":"30"
@@ -248,12 +305,15 @@
 	},
      {
 		"id":"19",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"25.98076064",
 			"axis_y":"175",
 			"axis_z":"-15.00000255"
@@ -261,12 +321,15 @@
 	},
      {
 		"id":"20",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-25.98076064",
 			"axis_y":"175",
 			"axis_z":"-15.00000255"
@@ -274,12 +337,15 @@
 	},
      {
 		"id":"21",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"225",
 			"axis_z":"22"
@@ -287,12 +353,15 @@
 	},
      {
 		"id":"22",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1",
+			"rotation_y":"1",
+			"rotation_x":"0",
 			"axis_x":"1.29755e-08",
 			"axis_y":"225",
 			"axis_z":"-22"
@@ -300,12 +369,15 @@
 	},
      {
 		"id":"23",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":30,
 		"image":"tronc_12.png",
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/embed/nhz9d1Gheps",
 		"position":{
-			"rotarion_y":"0.5",
+			"rotation_y":"0.5",
+			"rotation_x":"0",
 			"axis_x":"22",
 			"axis_y":"275",
 			"axis_z":"0"
@@ -313,12 +385,15 @@
 	},
      {
 		"id":"24",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":30,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.5",
+			"rotation_y":"1.5",
+			"rotation_x":"0",
 			"axis_x":"-22",
 			"axis_y":"275",
 			"axis_z":"0"
@@ -326,12 +401,15 @@
 	}, 
 	{
 		"id":"25",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"1.9",
 			"axis_x":"0",
 			"axis_y":"25",
 			"axis_z":"132.73505"
@@ -339,12 +417,15 @@
 	},
      {
 		"id":"26",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"114.9519575",
 			"axis_y":"25",
 			"axis_z":"-66.36746919"
@@ -352,12 +433,15 @@
 	},
 	{
 		"id":"27",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-114.9519575",
 			"axis_y":"25",
 			"axis_z":"-66.36746919"
@@ -365,12 +449,15 @@
 	},
 	{
 		"id":"28",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"25",
 			"axis_z":"53.86755"
@@ -378,12 +465,15 @@
 	},
 	{
 		"id":"29",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"25",
 			"axis_z":"30"
@@ -391,12 +481,15 @@
 	},
      {
 		"id":"30",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"46.65067982",
 			"axis_y":"25",
 			"axis_z":"-26.93375235"
@@ -404,12 +497,15 @@
 	},
      {
 		"id":"31",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"25.98076064",
 			"axis_y":"25",
 			"axis_z":"-15.00000255"
@@ -417,12 +513,15 @@
 	},
 	{
 		"id":"32",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-46.65067982",
 			"axis_y":"25",
 			"axis_z":"-26.93375235"
@@ -430,12 +529,15 @@
 	},
 	{
 		"id":"33",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-25.98076064",
 			"axis_y":"25",
 			"axis_z":"-15.00000255"
@@ -443,12 +545,15 @@
 	},
 	{
 		"id":"34",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"2.33333",
+			"rotation_y":"2.33333",
+			"rotation_x":"0",
 			"axis_x":"-12.99038032",
 			"axis_y":"25",
 			"axis_z":"-7.500001274"
@@ -456,12 +561,15 @@
 	},
      {
 		"id":"35",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.666667",
+			"rotation_y":"1.666667",
+			"rotation_x":"0",
 			"axis_x":"12.99038032",
 			"axis_y":"25",
 			"axis_z":"-7.500001274"
@@ -469,12 +577,15 @@
 	},
 	{
 		"id":"36",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"29.99997477",
 			"axis_y":"25",
 			"axis_z":"51.96153879"
@@ -482,12 +593,15 @@
 	},
 	{
 		"id":"37",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"-29.99997477",
 			"axis_y":"25",
 			"axis_z":"51.96153879"
@@ -495,12 +609,15 @@
 	},
 	{
 		"id":"38",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"59.97392787",
 			"axis_y":"25",
 			"axis_z":"1.768608418"
@@ -508,12 +625,15 @@
 	},
 	{
 		"id":"39",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1.33333",
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
 			"axis_x":"29.99997477",
 			"axis_y":"25",
 			"axis_z":"-51.96153879"
@@ -521,12 +641,15 @@
 	},
 	{
 		"id":"40",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0.666667",
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
 			"axis_x":"-29.99997477",
 			"axis_y":"25",
 			"axis_z":"-51.96153879"
@@ -534,12 +657,15 @@
 	},
 	{
 		"id":"41",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"0",
+			"rotation_y":"0",
+			"rotation_x":"0",
 			"axis_x":"-59.76656662",
 			"axis_y":"25",
 			"axis_z":"-5.287486646"
@@ -547,12 +673,15 @@
 	},
 	{
 		"id":"42",
-		"name":"base",
+		"name":"Posició",
+		"info":"bla bla bla ...",
+		"size":40,
 		"image":"tronc_13.png",
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/embed/RxaGIPrYj78",
 		"position":{
-			"rotarion_y":"1",
+			"rotation_y":"1",
+			"rotation_x":"0",
 			"axis_x":"0",
 			"axis_y":"25",
 			"axis_z":"14.4338"
