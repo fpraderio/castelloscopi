@@ -17,13 +17,7 @@
 <script src="js/jquery-1.9.1.js"></script>
 <script src="js/jquery-ui.js"></script>
 <link rel=stylesheet href="css/jquery-ui.css" />
-<link rel=stylesheet href="css/info.css"/>
-<script src="js/info.js"></script>
 <script src="js/video.js"></script>
-<div id="infoButton"></div>
-<div id="infoBox" title="Information">
-info
-</div>
 <div id="videoBox"></div>
 <!-- ------------------------------------------------------------ -->
 
@@ -36,14 +30,19 @@ if ( ! Detector.webgl ) {
 }
 
 // standard global variables
-var container, scene, camera, renderer, controls, stats;
+var container, scene, camera, light, renderer, cameraControls, stats;
 var clock = new THREE.Clock();
-var cameraControls;
 
 // custom global variables
 var casteller_textures = [];
 var castellers;
-var projector, mouse = { x: 0, y: 0 }, INTERSECTED;
+
+var INTERSECTED;
+var raycaster;
+var mouse;
+var objects = [];
+var projector;
+
 init();
 animate();
 
@@ -63,26 +62,13 @@ function init() {
 	scene = new THREE.Scene();
 	scene.fog = new THREE.Fog( 0xffffff, 1000, 4000 );
 	scene.add( camera );
+	camera.name = "camera";
 
 	// LIGHTS
-	scene.add( new THREE.AmbientLight( 0x222222 ) );
-
-	var light = new THREE.DirectionalLight( 0xffffff, 2.25 );
-	light.position.set( 0, 450, 500 );
-
-	light.castShadow = true;
-	light.shadowMapWidth = 1024;
-	light.shadowMapHeight = 1024;
-	light.shadowMapDarkness = 0.95;
-	// light.shadowCameraVisible = true;
-	light.shadowCameraNear = 100;
-	light.shadowCameraFar = 1200;
-	light.shadowCameraTop = 350;
-	light.shadowCameraBottom = -350;
-	light.shadowCameraRight = 1000;
-	light.shadowCameraLeft = -1000;
-
+	light = new THREE.AmbientLight( 0x222222 );
 	scene.add( light );
+	light.name = "light";
+
 
 	//  GROUND
 	var gt = THREE.ImageUtils.loadTexture( "textures/terrain/image1.jpg" );
@@ -96,11 +82,12 @@ function init() {
 	ground.material.map.wrapT = THREE.RepeatWrapping;
 	// note that because the ground does not cast a shadow, .castShadow is left false
 	ground.receiveShadow = true;
+	ground.name = "ground";
 
 	scene.add( ground );
 
 	// RENDERER
-	renderer = new THREE.WebGLRenderer( {antialias:true} );
+	renderer = new THREE.WebGLRenderer( );
 	renderer.setClearColor( scene.fog.color );
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
@@ -110,14 +97,16 @@ function init() {
 	// CONTROLS
 	cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
 	cameraControls.target.set( 0, 50, 0 );
-
-	// STATS
-	stats = new Stats();
-	container.appendChild( stats.domElement );
 	
 	// EVENTS
 	window.addEventListener( 'resize', onWindowResize, false );
+	document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+	document.addEventListener( 'touchstart', onDocumentTouchStart, false );
 
+	// initialize object to perform world/screen calculations
+	raycaster = new THREE.Raycaster();
+	projector = new THREE.Projector();
+	mouse = new THREE.Vector2();
 	
 	// CHARACTERS
 	loadJSON(function(response) {
@@ -136,7 +125,7 @@ function init() {
 			var casteller_id_context = casteller_id_canvas.getContext('2d');
 			casteller_id_context.font = "Bold 40px Arial";
 			casteller_id_context.fillStyle = "rgba(129,97,131,0.91)";
-		    casteller_id_context.fillText(i, 0, casteller_size);
+		    casteller_id_context.fillText(castellers[i].id, 0, casteller_size);
 		    
 			// canvas contents will be used for a texture
 			var casteller_id_texture = new THREE.Texture(casteller_id_canvas) 
@@ -149,13 +138,13 @@ function init() {
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 			materials.push(castellerMaterial);
-		    materials.push(new THREE.MeshBasicMaterial( { map: casteller_id_texture, color: 0x816183, overdraw: true } ));
+			materials.push(new THREE.MeshBasicMaterial( { map: casteller_id_texture, color: 0x816183, overdraw: true } ));
 
 			var castellerGeometry = new THREE.CubeGeometry(casteller_size, casteller_size, 1, 1, 1, 1 );
 			var facesMaterial = new THREE.MeshFaceMaterial(materials);
 			var casteller = new THREE.Mesh(castellerGeometry, facesMaterial);
 			casteller.name = castellers[i].name;
-			casteller.id = "casteller_"+castellers[i].id;
+			casteller.casteller_id = castellers[i].id;
 			casteller.overdraw = true;
 			casteller.rotation.y = Math.PI * castellers[i].position.rotation_y;
 			casteller.rotation.x = Math.PI * castellers[i].position.rotation_x;
@@ -165,22 +154,16 @@ function init() {
 				castellers[i].position.axis_z
 				);
 			scene.add(casteller);
+			objects.push(casteller);
 		};
+
  	});
 
+
+
 	
 }
 
-function onDocumentMouseMove( event ) 
-{
-	// the following line would stop any other event handler from firing
-	// (such as the mouse's TrackballControls)
-	// event.preventDefault();
-	
-	// update the mouse variable
-	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-}
 
 function onWindowResize() {
 
@@ -208,67 +191,65 @@ function update()
 	for (var i = 0; i < casteller_textures.length; i++) {
 		casteller_textures[i].update(1000 * delta);
 	};
-	
-	// find intersections
+		
+	cameraControls.update();
+}
 
-	// create a Ray with origin at the mouse position
-	//   and direction into the scene (camera direction)
+function onDocumentTouchStart( event ) {
+	event.preventDefault();
+	
+	event.clientX = event.touches[0].clientX;
+	event.clientY = event.touches[0].clientY;
+	onDocumentMouseDown( event );
+
+}
+
+function onDocumentMouseDown( event ) {
+	console.log("******************** mouse down");
+
+	event.preventDefault();
+
+	// update the mouse variable
+	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+
 	var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
 	projector.unprojectVector( vector, camera );
 	var ray = new THREE.Raycaster( camera.position, vector.sub( camera.position ).normalize() );
 
 	// create an array containing all objects in the scene with which the ray intersects
-	var intersects = ray.intersectObjects( scene.children );
+	var intersects = ray.intersectObjects( objects );
 
-	// INTERSECTED = the object in the scene currently closest to the camera 
-	//		and intersected by the Ray projected from the mouse position 	
-	
-	// if there is one (or more) intersections
-	if ( intersects.length > 0 )
-	{
-		// if the closest object intersected is not the currently stored intersection object
-		if ( intersects[ 0 ].object != INTERSECTED ) 
-		{
-			// store reference to closest object as current intersection object
-			INTERSECTED = intersects[ 0 ].object;
-			console.log(INTERSECTED.id);
-			var casteller_id = INTERSECTED.id;
-			if(casteller_id.indexOf("casteller")>-1){
-				var casteller;
-				for (var i = 0; i < castellers.length; i++) {
-					if ("casteller_"+castellers[i].id==casteller_id){
-						casteller = castellers[i];
-						console.log(casteller);
-					}
-				}
-				if($("#videoBox").is(':empty')){
-					//$("#videoBox").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
-					$('#videoBox').attr('title',casteller.name);
-					$("#videoBox").append("<iframe width='320' height='240' src='"+casteller.youtube+"' frameborder='0' allowfullscreen></iframe>");
-					$("#videoBox").append("<h2>"+casteller.name+" "+casteller.id+"</h2>");
-					$("#videoBox").append("<p>"+casteller.info+"</p>");
-				}
-				$("#videoBox").dialog("open");
+
+	if ( intersects.length > 0 ) {
+
+		// store reference to closest object as current intersection object
+		INTERSECTED = intersects[ 0 ].object;
+		var casteller_id = INTERSECTED.casteller_id;
+		console.log("INTERSECTED "+INTERSECTED.casteller_id);
+		var casteller;
+		for (var i = 0; i < castellers.length; i++) {
+			if (castellers[i].id==casteller_id){
+				casteller = castellers[i];
+				console.log(casteller);
 			}
 		}
-	} 
-	else // there are no intersections
-	{
-		// restore previous intersection object (if it exists) to its original color
-		  //if ( INTERSECTED ) 
-		  //	INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
-		// remove previous intersection object reference
-		//     by setting current intersection object to "nothing"
-		INTERSECTED = null;
+		if($("#videoBox").is(':empty')){
+			//$("#videoBox").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
+			$('#videoBox').attr('title',casteller.name);
+			$("#videoBox").append("<iframe width='320' height='240' src='"+casteller.youtube+"' frameborder='0' allowfullscreen></iframe>");
+			$("#videoBox").append("<h2>"+casteller.name+" "+casteller.id+"</h2>");
+			$("#videoBox").append("<p>"+casteller.info+"</p>");
+		}
+		$("#videoBox").dialog("open");
 	}
 
-	
-	controls.update();
-	stats.update();
 }
 
 function render() 
 {
+
 	renderer.render( scene, camera );
 }
 
