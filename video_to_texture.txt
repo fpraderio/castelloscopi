@@ -1,11 +1,14 @@
 
-- Per passar els videos a imatges
-http://linuxers.org/tutorial/how-extract-images-video-using-ffmpeg
-ffmpeg -i 12--Cstllscp\ Fsc\ segon\ Cucu.mov -r 1 -vframes 100 -ss 00:00:40 -s vga image-%d.jpeg
+#Per passar els videos a imatges
+#http://linuxers.org/tutorial/how-extract-images-video-using-ffmpeg
+ffmpeg -i 12--Cstllscp\ Fsc\ segon\ Cucu.mov -r 1 -vframes 64 -ss 00:00:40 -s vga image-%d.jpeg
 
-les sprites com a màxim de 8064px (64 imatges)
+#les sprites com a màxim de 8064px (64 imatges) 8192x96
 
-- Per unir les imatges (CSS spritting)
 
-http://www.phpied.com/command-line-css-spriting/
+#Per unir les imatges (CSS spritting)
+#http://www.phpied.com/command-line-css-spriting/
 convert * +append casteller.png
+
+#per cambiar les dimensions de les imatges
+mogrify -resize 8192x96 *.png
