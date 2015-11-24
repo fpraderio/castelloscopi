@@ -1,5 +1,5 @@
- [
-     {
+[
+    {
 		"id":"1",
 		"name":"Tap",
 		"info":"bla bla bla ...",
@@ -15,7 +15,7 @@
 			"axis_z":"-51.96153879"
 		}
 	},
-     {
+    {
 		"id":"2",
 		"name":"Contrafort aixecador",
 		"info":"bla bla bla ...",
@@ -31,7 +31,7 @@
 			"axis_z":"-26.93375235"
 		}
 	},
-     {
+    {
 		"id":"3",
 		"name":"Baix",
 		"info":"bla bla bla ...",
@@ -47,7 +47,7 @@
 			"axis_z":"-15.00000255"
 		}
 	},
-     {
+    {
 		"id":"4",
 		"name":"Crossa",
 		"info":"bla bla bla ...",
@@ -63,7 +63,7 @@
 			"axis_z":"51.96153879"
 		}
 	},
-     {
+    {
 		"id":"5",
 		"name":"Agulla",
 		"info":"bla bla bla ...",
@@ -95,7 +95,7 @@
 			"axis_z":"-7.500001274"
 		}
 	},
-     {
+    {
 		"id":"7",
 		"name":"Crossa",
 		"info":"bla bla bla ...",
@@ -111,7 +111,7 @@
 			"axis_z":"1.768608418"
 		}
 	},
-     {
+    {
 		"id":"8",
 		"name":"Baix",
 		"info":"bla bla bla ...",
@@ -127,7 +127,7 @@
 			"axis_z":"30"
 		}
 	},
-     {
+    {
 		"id":"9",
 		"name":"Contrafort",
 		"info":"bla bla bla ...",
@@ -143,7 +143,7 @@
 			"axis_z":"53.86755"
 		}
 	},
-     {
+    {
 		"id":"10",
 		"name":"Crossa",
 		"info":"bla bla bla ...",
@@ -159,7 +159,7 @@
 			"axis_z":"51.96153879"
 		}
 	},
-     {
+    {
 		"id":"11",
 		"name":"Agulla",
 		"info":"bla bla bla ...",
@@ -175,7 +175,7 @@
 			"axis_z":"14.4338"
 		}
 	},
-     {
+    {
 		"id":"12",
 		"name":"Vent",
 		"info":"bla bla bla ...",
@@ -191,7 +191,7 @@
 			"axis_z":"46.6506"
 		}
 	},
-     {
+    {
 		"id":"13",
 		"name":"Lateral agulla",
 		"info":"bla bla bla ...",
@@ -207,7 +207,7 @@
 			"axis_z":"80.8013"
 		}
 	},
-     {
+    {
 		"id":"14",
 		"name":"Primeres mans",
 		"info":"bla bla bla ...",
@@ -223,7 +223,7 @@
 			"axis_z":"93.3013"
 		}
 	},
-     {
+    {
 		"id":"15",
 		"name":"Segon lateral",
 		"info":"bla bla bla ...",
@@ -239,7 +239,7 @@
 			"axis_z":"80.8013"
 		}
 	},
-     {
+    {
 		"id":"16",
 		"name":"Vent",
 		"info":"bla bla bla ...",
@@ -255,7 +255,7 @@
 			"axis_z":"46.6506"
 		}
 	},
-     {
+    {
 		"id":"17",
 		"name":"Segon lateral",
 		"info":"bla bla bla ...",
@@ -271,7 +271,7 @@
 			"axis_z":"-80.8013"
 		}
 	},
-     {
+    {
 		"id":"18",
 		"name":"Segones mans",
 		"info":"bla bla bla ...",
@@ -335,7 +335,7 @@
 			"axis_z":"132.73505"
 		}
 	},
-     {
+    {
 		"id":"22",
 		"name":"Cap de colla",
 		"info":"bla bla bla ...",
@@ -351,7 +351,7 @@
 			"axis_z":"-66.36746919"
 		}
 	},
-     {
+    {
 		"id":"23",
 		"name":"Segon",
 		"info":"5d7 bla bla bla ...",
@@ -367,7 +367,7 @@
 			"axis_z":"30"
 		}
 	},
-     {
+    {
 		"id":"24",
 		"name":"Segon",
 		"info":"4d7 bla bla bla ...",
@@ -383,7 +383,7 @@
 			"axis_z":"-15.00000255"
 		}
 	},
-     {
+    {
 		"id":"25",
 		"name":"Segon",
 		"info":"3d7 bla bla bla ...",
@@ -399,7 +399,7 @@
 			"axis_z":"-15.00000255"
 		}
 	},
-     {
+    {
 		"id":"26",
 		"name":"Terç",
 		"info":"5d7 bla bla bla ...",
@@ -415,7 +415,7 @@
 			"axis_z":"30"
 		}
 	},
-     {
+    {
 		"id":"27",
 		"name":"Terça",
 		"info":"7d7 bla bla bla ...",
@@ -431,7 +431,7 @@
 			"axis_z":"-15.00000255"
 		}
 	},
-     {
+    {
 		"id":"28",
 		"name":"Terç",
 		"info":"3d7 bla bla bla ...",
@@ -447,7 +447,7 @@
 			"axis_z":"-15.00000255"
 		}
 	},
-     {
+    {
 		"id":"29",
 		"name":"Quarta",
 		"info":"4d7a bla bla bla ...",
@@ -479,7 +479,7 @@
 			"axis_z":"-15.00000255"
 		}
 	},
-     {
+    {
 		"id":"31",
 		"name":"Quarta",
 		"info":"3d7 bla bla bla ...",
@@ -527,7 +527,7 @@
 			"axis_z":"-22"
 		}
 	},
-     {
+    {
 		"id":"34",
 		"name":"Acotxadora",
 		"info":"4d6a bla bla bla ...",
@@ -543,7 +543,7 @@
 			"axis_z":"0"
 		}
 	},
-     {
+    {
 		"id":"35",
 		"name":"Enxaneta",
 		"info":"3d7 bla bla bla ...",
@@ -557,6 +557,134 @@
 			"axis_x":"-22",
 			"axis_y":"275",
 			"axis_z":"0"
+		}
+	},
+	{
+		"id":"36",
+		"name":"Baix",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
+			"axis_x":"-25.98076064",
+			"axis_y":"25",
+			"axis_z":"-15.00000255"
+		}
+	},
+	{
+		"id":"37",
+		"name":"Contrafort",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
+			"axis_x":"-46.65067982",
+			"axis_y":"25",
+			"axis_z":"-26.93375235"
+		}
+	},
+	{
+		"id":"38",
+		"name":"Crossa",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"0",
+			"rotation_x":"0",
+			"axis_x":"-59.76656662",
+			"axis_y":"25",
+			"axis_z":"-5.287486646"
+		}
+	},
+	{
+		"id":"39",
+		"name":"PosiciÃ³",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"0.666667",
+			"rotation_x":"0",
+			"axis_x":"-29.99997477",
+			"axis_y":"25",
+			"axis_z":"-51.96153879"
+		}
+	},
+	{
+		"id":"40",
+		"name":"Primeres mans",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
+			"axis_x":"-80.8013",
+			"axis_y":"25",
+			"axis_z":"-46.6506"
+		}
+	},
+	{
+		"id":"41",
+		"name":"MiradaExterior3",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"1.33333",
+			"rotation_x":"0",
+			"axis_x":"-114.9519575",
+			"axis_y":"25",
+			"axis_z":"-66.36746919"
+		}
+	},
+	{
+		"id":"42",
+		"name":"Lateral",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"1.5",
+			"rotation_x":"0",
+			"axis_x":"-93.3013",
+			"axis_y":"25",
+			"axis_z":"-2.75142"
+		}
+	},
+    {
+		"id":"43",
+		"name":"Lateral",
+		"info":"bla bla bla ...",
+		"size":40,
+		"image":"",
+		"video":"",
+		"youtube":"",
+		"position":{
+			"rotation_y":"1.16667",
+			"rotation_x":"0",
+			"axis_x":"-46.6506",
+			"axis_y":"25",
+			"axis_z":"-80.8013"
 		}
 	}
 ]
