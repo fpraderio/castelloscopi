@@ -6,3 +6,37 @@ body
 	margin: 0px;
 	overflow: hidden;
 }
+#castelloscopi_virtual
+{
+	position: fixed;
+	padding: 10px;
+}
+#castelloscopi_logo
+{
+	position: fixed;
+    right: 0;
+    padding: 10px;
+}
+#footer
+{
+	position: fixed;
+    bottom: 0;
+    padding: 10px;
+}
+#videoBox .ui-dialog-titlebar
+{
+	float: right;
+	width: 10px
+}
+#videoBox .video
+{
+	float: left;
+}
+#videoBox .text
+{
+	padding: 5px;
+	float: left;
+	width: 300px;
+	font-weight: normal;
+	font-size: 12px;
+}
