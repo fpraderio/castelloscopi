@@ -19,6 +19,17 @@
 <link rel=stylesheet href="css/jquery-ui.css" />
 <script src="js/video.js"></script>
 <div id="videoBox"></div>
+<div id="castelloscopi_virtual">
+	<h1>castelloscopi virtual</h1>
+	<p>totes les mirades d'un castell</p>
+</div>
+<div id="footer">
+	<p>creat per castelloscopi</p>
+</div>
+<div id="castelloscopi_logo">
+	<a href="http://castelloscopi.cat" target="_blank"><img src="./images/logo_castelloscopi.png" /></a>
+</div>
+
 <!-- ------------------------------------------------------------ -->
 
 <div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
@@ -318,9 +329,9 @@ function onDocumentMouseDown( event ) {
 		if($("#videoBox").is(':empty')){
 			//$("#videoBox").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
 			$('#videoBox').attr('title',casteller.name);
-			$("#videoBox").append("<iframe width='320' height='240' src='"+casteller.youtube+"' frameborder='0' allowfullscreen></iframe>");
-			$("#videoBox").append("<h2>"+casteller.name+" "+casteller.id+"</h2>");
-			$("#videoBox").append("<p>"+casteller.info+"</p>");
+			$("#videoBox").append('<div class="video"><iframe width="560" height="315" src="'+casteller.youtube+'" frameborder="0" allowfullscreen=""></iframe></div>');
+			$("#videoBox").append("<div class='text'><h2>"+casteller.name+" "+casteller.id+"</h2>"+"<p>"+casteller.info+"</p></div>");
+			$("#videoBox").append();
 		}
 		$("#videoBox").dialog("open");
 	}

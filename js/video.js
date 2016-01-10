@@ -2,8 +2,8 @@ $(function()
 {
 	 $("#videoBox")
 	.dialog({ 
-		position: { my: "left top", at: "left top", of: window },
-		resizable: false,
+		position: { my: "center center", at: "center center", of: window },
+		resizable: true,
 		width:'auto',
 		autoOpen: false, 
 		show: { effect: 'fade', duration: 500 },
