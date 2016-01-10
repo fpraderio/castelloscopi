@@ -434,7 +434,7 @@
     {
 		"id":"28",
 		"name":"Terç",
-		"info":"3d7 bla bla bla ...",
+		"info":"Lorem Ipsum <b>és un text de farciment </b>usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.",
 		"size":40,
 		"image":"10--Cstllscp_Fsc_trç_Gerard.png",
 		"video":"tronc_12.mp4",
@@ -504,11 +504,11 @@
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/watch?v=aGmjOCi7dJc",
 		"position":{
-			"rotation_y":"0",
+			"rotation_y":"0.33333",
 			"rotation_x":"0",
-			"axis_x":"0",
-			"axis_y":"220",
-			"axis_z":"22"
+			"axis_x":"19.05255780337606",
+			"axis_y":"215",
+			"axis_z":"11.00000187040957"
 		}
 	},
 	{
@@ -520,11 +520,11 @@
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/watch?v=0YjOXmhTryY",
 		"position":{
-			"rotation_y":"1",
+			"rotation_y":"1.33333",
 			"rotation_x":"0",
-			"axis_x":"1.29755e-08",
-			"axis_y":"220",
-			"axis_z":"-22"
+			"axis_x":"-19.05255780337606",
+			"axis_y":"215",
+			"axis_z":"-11.00000187040957"
 		}
 	},
     {
@@ -536,11 +536,11 @@
 		"video":"tronc_13.mp4",
 		"youtube":"https://www.youtube.com/watch?v=I6fm0Gr2ywc",
 		"position":{
-			"rotation_y":"0.5",
+			"rotation_y":"0.83333",
 			"rotation_x":"0",
-			"axis_x":"22",
-			"axis_y":"260",
-			"axis_z":"0"
+			"axis_x":"11.00000187040957",
+			"axis_y":"250",
+			"axis_z":"-19.05255780337606"
 		}
 	},
     {
@@ -552,11 +552,11 @@
 		"video":"tronc_12.mp4",
 		"youtube":"https://www.youtube.com/watch?v=7hdhVngGTZc",
 		"position":{
-			"rotation_y":"1.5",
+			"rotation_y":"1.83333",
 			"rotation_x":"0",
-			"axis_x":"-22",
-			"axis_y":"260",
-			"axis_z":"0"
+			"axis_x":"-11.00000187040957",
+			"axis_y":"250",
+			"axis_z":"19.05255780337606"
 		}
 	},
 	{
@@ -609,7 +609,7 @@
 	},
 	{
 		"id":"39",
-		"name":"PosiciÃ³",
+		"name":"Posició",
 		"info":"bla bla bla ...",
 		"size":40,
 		"image":"",
@@ -641,7 +641,7 @@
 	},
 	{
 		"id":"41",
-		"name":"MiradaExterior3",
+		"name":"Segones mans",
 		"info":"bla bla bla ...",
 		"size":40,
 		"image":"",
