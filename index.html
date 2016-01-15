@@ -6,6 +6,15 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel=stylesheet href="css/base.css"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -14,12 +23,29 @@
 <script src="js/libs/stats.min.js"></script>
 <script src="js/controls/OrbitControls.js"></script>
 
-<!-- jQuery code to display an information button and box when clicked. -->
-<script src="js/jquery-1.9.1.js"></script>
-<script src="js/jquery-ui.js"></script>
-<link rel=stylesheet href="css/jquery-ui.css" />
-<script src="js/video.js"></script>
-<div id="videoBox"></div>
+
+<!-- Button trigger modal -->
+<button id="displayModal" type="button" style="display: none" data-toggle="modal" data-target="#videoModal" /></button>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="casteller-name"></h2>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-8" id="casteller-video"></div>
+          <div class="col-md-4">
+            <p id="casteller-info"></p>
+            <p id="casteller-extra-info"></p>
+          </div>
+		</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <div id="castelloscopi_virtual">
 	<h1>castelloscopi virtual</h1>
 	<p>totes les mirades d'un castell</p>
@@ -304,7 +330,6 @@ function onDocumentTouchStart( event ) {
 }
 
 function onDocumentMouseDown( event ) {
-	console.log("******************** mouse down");
 
 	event.preventDefault();
 
@@ -334,14 +359,22 @@ function onDocumentMouseDown( event ) {
 				console.log(casteller);
 			}
 		}
-		if($("#videoBox").is(':empty')){
-			//$("#videoBox").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
-			$('#videoBox').attr('title',casteller.name);
-			$("#videoBox").append('<div class="video"><iframe width="560" height="315" src="'+casteller.youtube+'" frameborder="0" allowfullscreen=""></iframe></div>');
-			$("#videoBox").append("<div class='text'><h2>"+casteller.name+" "+casteller.id+"</h2>"+"<p>"+casteller.info+"</p></div>");
-			$("#videoBox").append();
-		}
-		$("#videoBox").dialog("open");
+
+		//$("#videoBox").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
+		$("#casteller-video").empty();
+		$("#casteller-video").append('<iframe width="560" height="315" src="'+casteller.youtube+'" frameborder="0" allowfullscreen></iframe>');
+
+		console.log($("#casteller-video"));
+		
+		$("#casteller-name").empty();
+		$("#casteller-name").append(casteller.name);
+		$("#casteller-info").empty();
+		$("#casteller-info").append(casteller.info);
+		$("#casteller-extra-info").empty();
+		$("#casteller-extra-info").append(
+			"<a href="+casteller.wikipedia+" target='_blank'></i>més informació <i class='icon-info'>"
+			);
+		$('#displayModal').click();
 	}
 
 }
