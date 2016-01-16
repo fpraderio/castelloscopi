@@ -134,9 +134,9 @@ function init() {
 	// CAMERA
 
 	var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;
-	var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000;
+	var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 10000;
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
-	camera.position.set(0,250,800);
+	camera.position.set(0,250,600);
 
 	// SCENE
 	
@@ -153,8 +153,6 @@ function init() {
 	hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
 	hemiLight.position.set( 0, 500, 0 );
 	scene.add( hemiLight );
-
-	//
 
 	dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
 	dirLight.color.setHSL( 0.1, 1, 0.95 );
@@ -240,7 +238,30 @@ function init() {
 	    
 	    // ANIMATED TEXTURES!
 	    for (var i = 0; i < castellers.length; i++) {
-			var castellerTexture = new THREE.ImageUtils.loadTexture( 'images/castellers/'+castellers[i].image);
+	    	var castellerMaterial = '';
+
+	    	if(castellers[i].image){
+	    		//video screen
+				var castellerTexture = new THREE.ImageUtils.loadTexture( 'images/castellers/'+castellers[i].image);
+				castellerMaterial = new THREE.MeshBasicMaterial( { map: castellerTexture, side:THREE.DoubleSide, overdraw: true } );
+			} else {
+				//black screen
+
+				//canvas texture (casteller id)
+				// create a canvas element
+				var bkackscreen_canvas = document.createElement('canvas');
+				var bkackscreen_context = bkackscreen_canvas.getContext('2d');
+				bkackscreen_context.font = "Bold 40px Arial";
+				bkackscreen_context.fillStyle = "rgba(255,255,255,1)";
+			    bkackscreen_context.fillText(castellers[i].name, 0, castellers[i].size);
+			    
+				// canvas contents will be used for a texture
+				var bkackscreen_texture = new THREE.Texture(bkackscreen_canvas) 
+				bkackscreen_texture.needsUpdate = true;
+				castellerMaterial = new THREE.MeshBasicMaterial( { map: bkackscreen_texture, color: 0xFDFDFD, overdraw: true } );
+				console.log('black screen');
+				console.log(castellers[i].name);
+			}
 
 			casteller_textures[i] = new TextureAnimator( castellerTexture, 64, 1, 64, 200 ); // texture, #horiz, #vert, #total, duration.
 			var casteller_size = castellers[i].size;
@@ -249,7 +270,7 @@ function init() {
 			var casteller_id_canvas = document.createElement('canvas');
 			var casteller_id_context = casteller_id_canvas.getContext('2d');
 			casteller_id_context.font = "Bold 40px Arial";
-			casteller_id_context.fillStyle = "rgba(129,97,131,0.91)";
+			casteller_id_context.fillStyle = "rgba(255,255,255,1)";
 		    casteller_id_context.fillText(castellers[i].id, 0, casteller_size);
 		    
 			// canvas contents will be used for a texture
@@ -257,13 +278,12 @@ function init() {
 			casteller_id_texture.needsUpdate = true;
 
 			var materials = []
-			var castellerMaterial = new THREE.MeshBasicMaterial( { map: castellerTexture, side:THREE.DoubleSide, overdraw: true } );
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 			materials.push(castellerMaterial);
-			materials.push(new THREE.MeshBasicMaterial( { map: casteller_id_texture, color: 0x816183, overdraw: true } ));
+			materials.push(new THREE.MeshBasicMaterial( { map: casteller_id_texture, color: 0xFDFDFD, overdraw: true } ));
 
 			var castellerGeometry = new THREE.CubeGeometry(casteller_size, casteller_size, 1, 1, 1, 1 );
 			var facesMaterial = new THREE.MeshFaceMaterial(materials);
