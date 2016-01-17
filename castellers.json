@@ -35,7 +35,7 @@
 	},
     {
 		"id":"3",
-		"name":"Baix",
+		"name":"Baix o baixa",
 		"info":"El baix o la baixa és la persona que dins la pinya aguanta el pes del tronc. Així, té els peus del segon o la segona a les seves espatlles, i té tot de persones de la pinya que l’ajuden a suportar el pes i no enfonsar-se. Sobretot el que es coneix com al seu nucli: agulla, contrafort, crosses i primeres mans. <br>El baix o la baixa acostuma a ser una persona baixeta (per fer el pis de segons més accessible a la pinya) i robusta.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/3_de_7",
 		"size":40,
@@ -120,7 +120,7 @@
 	},
     {
 		"id":"8",
-		"name":"Baix",
+		"name":"Baix o baixa",
 		"info":"El baix o la baixa és la persona que dins la pinya aguanta el pes del tronc. Així, té els peus del segon o la segona a les seves espatlles, i té tot de persones de la pinya que l’ajuden a suportar el pes i no enfonsar-se. Sobretot el que es coneix com al seu nucli: agulla, contrafort, crosses i primeres mans. <br>El baix o la baixa acostuma a ser una persona baixeta (per fer el pis de segons més accessible a la pinya) i robusta.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/4_de_7",
 		"size":40,
@@ -376,7 +376,7 @@
     {
 		"id":"23",
 		"name":"Segon o Segona",
-		"info":"El segon o la segona és la persona que es col·loca sobre la pinya. En concret, posa els seus peus a les espatlles del baix o la baixa. Rep l’ajuda de la pinya (agulla, primeres mans, laterals i vents) però ha d’aguantar tots els pisos superiors. El segon ha d’aguantar el pes del castell mantenint la postura i entenent-se amb la pinya, evitant deformar la forma del castell.<br>Els segons i les segones solen ser persones robustes i amb una musculatura d’espatlles i esquena molt forta.",
+		"info":"El segon o la segona és la persona que es col·loca sobre la pinya. En concret, posa els seus peus a les espatlles del baix o la baixa. Rep l’ajuda de la pinya (agulla, primeres mans, laterals i vents) però ha d’aguantar tots els pisos superiors. El segon o la segona ha d’aguantar el pes del castell mantenint la postura i entenent-se amb la pinya, evitant deformar la forma del castell.<br>Els segons i les segones solen ser persones robustes i amb una musculatura d’espatlles i esquena molt forta.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/5_de_7",
 		"size":40,
 		"image":"12--Cstllscp_Fsc_segon_Cucu.png",
@@ -392,8 +392,8 @@
 	},
     {
 		"id":"24",
-		"name":"Segon",
-		"info":"El segon o la segona és la persona que es col·loca sobre la pinya. En concret, posa els seus peus a les espatlles del baix o la baixa. Rep l’ajuda de la pinya (agulla, primeres mans, laterals i vents) però ha d’aguantar tots els pisos superiors. El segon ha d’aguantar el pes del castell mantenint la postura i entenent-se amb la pinya, evitant deformar la forma del castell.<br>Els segons i les segones solen ser persones robustes i amb una musculatura d’espatlles i esquena molt forta.",
+		"name":"Segon o Segona",
+		"info":"El segon o la segona és la persona que es col·loca sobre la pinya. En concret, posa els seus peus a les espatlles del baix o la baixa. Rep l’ajuda de la pinya (agulla, primeres mans, laterals i vents) però ha d’aguantar tots els pisos superiors. El segon o la segona ha d’aguantar el pes del castell mantenint la postura i entenent-se amb la pinya, evitant deformar la forma del castell.<br>Els segons i les segones solen ser persones robustes i amb una musculatura d’espatlles i esquena molt forta.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/4_de_7",
 		"size":40,
 		"image":"11--Cstllscp_Fsc__segon_Pau.png",
@@ -409,8 +409,8 @@
 	},
     {
 		"id":"25",
-		"name":"Segon",
-		"info":"El segon o la segona és la persona que es col·loca sobre la pinya. En concret, posa els seus peus a les espatlles del baix o la baixa. Rep l’ajuda de la pinya (agulla, primeres mans, laterals i vents) però ha d’aguantar tots els pisos superiors. El segon ha d’aguantar el pes del castell mantenint la postura i entenent-se amb la pinya, evitant deformar la forma del castell.<br>Els segons i les segones solen ser persones robustes i amb una musculatura d’espatlles i esquena molt forta.",
+		"name":"Segon o Segona",
+		"info":"El segon o la segona és la persona que es col·loca sobre la pinya. En concret, posa els seus peus a les espatlles del baix o la baixa. Rep l’ajuda de la pinya (agulla, primeres mans, laterals i vents) però ha d’aguantar tots els pisos superiors. El segon o la segona ha d’aguantar el pes del castell mantenint la postura i entenent-se amb la pinya, evitant deformar la forma del castell.<br>Els segons i les segones solen ser persones robustes i amb una musculatura d’espatlles i esquena molt forta.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/3_de_7",
 		"size":40,
 		"image":"13--10.1_Castelloscopi_Subjectiu_Ángel_segon_3d7_Diada_Esplugues_(23-III-14)_dfnt.png",
@@ -443,7 +443,7 @@
 	},
     {
 		"id":"27",
-		"name":"Terça",
+		"name":"Terç o Terça",
 		"info":"El terç o terça és la persona que ocupa el pis de sobre els segons. És a dir, és el primer pis del castell sense ajuda de la pinya, i per tant requereix molta més tècnica, tot i aguantar menys pes. El terç o la terça s’ha d’entendre amb el segon (però ja no amb la pinya), amb la quarta i amb la resta de membres del seu pis (excepte pilars). La seva funció és mantenir el castell dret i tranquil (minimitzant el pas de batzegades entre la part superior del castell i la pinya), en una tasca híbrida entre aguantar molt de pes i alhora mantenir l’equilibri.<br>Els terços i les terces solen ser persones d’estatura mitjana i complexitat bastant atlètica, amb molta tècnica.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/7_de_7",
 		"size":40,
@@ -460,7 +460,7 @@
 	},
     {
 		"id":"28",
-		"name":"Terç",
+		"name":"Terç o Terça",
 		"info":"El terç o terça és la persona que ocupa el pis de sobre els segons. És a dir, és el primer pis del castell sense ajuda de la pinya, i per tant requereix molta més tècnica, tot i aguantar menys pes. El terç o la terça s’ha d’entendre amb el segon (però ja no amb la pinya), amb la quarta i amb la resta de membres del seu pis (excepte pilars). La seva funció és mantenir el castell dret i tranquil (minimitzant el pas de batzegades entre la part superior del castell i la pinya), en una tasca híbrida entre aguantar molt de pes i alhora mantenir l’equilibri.<br>Els terços i les terces solen ser persones d’estatura mitjana i complexitat bastant atlètica, amb molta tècnica.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/3_de_7",
 		"size":40,
@@ -494,7 +494,7 @@
 	},
 	{
 		"id":"30",
-		"name":"Quarta",
+		"name":"Quarta o Quart",
 		"info":"La quarta o el quart és la persona que puja sobre del terç o la terça corresponent. És a dir, ocupa el tercer pis de sobre la pinya o el quart pis comptant la pinya. La quarta ha d’entendre’s amb el terç, amb la persona que té a sobre (pis de quintes o pom de dalt) i amb la resta de membres del seu pis (excepte pilars). La seva funció és mantenir el castell dret, donant confiança als pisos superiors, que o són canalla (castells de 7) o solen ser adolescents (castells de 8). No aguanten tant de pes, però requereixen de gran tècnica per poder treballar amb castells més deformats i amb moviments tant per baix com per dalt.<br>Les quartes i els quarts solen ser, en els castells de 7 pisos, dones joves fortes i primes d’estatura mitjana o petita. En els castells de 8 pisos, són tant dones com homes. però amb més corpulència i musculatura. Necessiten agilitat per pujar i una tècnica extrema, i també capacitat de mantenir la calma per transmetre serenor i confiança als pisos superiors.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/7_de_7",
 		"size":40,
@@ -511,7 +511,7 @@
 	},
     {
 		"id":"31",
-		"name":"Quarta",
+		"name":"Quarta o Quart",
 		"info":"La quarta o el quart és la persona que puja sobre del terç o la terça corresponent. És a dir, ocupa el tercer pis de sobre la pinya o el quart pis comptant la pinya. La quarta ha d’entendre’s amb el terç, amb la persona que té a sobre (pis de quintes o pom de dalt) i amb la resta de membres del seu pis (excepte pilars). La seva funció és mantenir el castell dret, donant confiança als pisos superiors, que o són canalla (castells de 7) o solen ser adolescents (castells de 8). No aguanten tant de pes, però requereixen de gran tècnica per poder treballar amb castells més deformats i amb moviments tant per baix com per dalt.<br>Les quartes i els quarts solen ser, en els castells de 7 pisos, dones joves fortes i primes d’estatura mitjana o petita. En els castells de 8 pisos, són tant dones com homes. però amb més corpulència i musculatura. Necessiten agilitat per pujar i una tècnica extrema, i també capacitat de mantenir la calma per transmetre serenor i confiança als pisos superiors.",
 		"viquipedia":"https://ca.wikipedia.org/wiki/3_de_7",
 		"size":40,
