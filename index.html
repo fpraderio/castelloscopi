@@ -251,32 +251,35 @@ function init() {
 				// create a canvas element
 				var bkackscreen_canvas = document.createElement('canvas');
 				var bkackscreen_context = bkackscreen_canvas.getContext('2d');
-				bkackscreen_context.font = "Bold 40px Arial";
+				bkackscreen_context.font = "Bold 30px Arial";
 				bkackscreen_context.fillStyle = "rgba(255,255,255,1)";
-			    bkackscreen_context.fillText(castellers[i].name, 0, castellers[i].size);
+			    bkackscreen_context.fillText(castellers[i].name, 10, castellers[i].size);
 			    
 				// canvas contents will be used for a texture
 				var bkackscreen_texture = new THREE.Texture(bkackscreen_canvas) 
 				bkackscreen_texture.needsUpdate = true;
 				castellerMaterial = new THREE.MeshBasicMaterial( { map: bkackscreen_texture, color: 0xFDFDFD, overdraw: true } );
-				console.log('black screen');
-				console.log(castellers[i].name);
 			}
-
+			var canvas_2d_text = '';
+			if (castellers[i].id == 6 || castellers[i].id == 38 || castellers[i].id == 39) {
+				canvas_2d_text = castellers[i].name;
+			} else {
+				canvas_2d_text = castellers[i].id;
+			}
 			casteller_textures[i] = new TextureAnimator( castellerTexture, 64, 1, 64, 200 ); // texture, #horiz, #vert, #total, duration.
 			var casteller_size = castellers[i].size;
 			//canvas texture (casteller id)
 			// create a canvas element
 			var casteller_id_canvas = document.createElement('canvas');
 			var casteller_id_context = casteller_id_canvas.getContext('2d');
-			casteller_id_context.font = "Bold 40px Arial";
+			casteller_id_context.font = "Bold 30px Arial";
 			casteller_id_context.fillStyle = "rgba(255,255,255,1)";
-		    casteller_id_context.fillText(castellers[i].id, 0, casteller_size);
+		    casteller_id_context.fillText(canvas_2d_text, 10, casteller_size);
 		    
 			// canvas contents will be used for a texture
 			var casteller_id_texture = new THREE.Texture(casteller_id_canvas) 
 			casteller_id_texture.needsUpdate = true;
-
+			
 			var materials = []
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
 		    materials.push(new THREE.MeshBasicMaterial( { color: 0x816183, overdraw: true } ));
@@ -380,21 +383,23 @@ function onDocumentMouseDown( event ) {
 			}
 		}
 
-		//$("#videoBox").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
-		$("#casteller-video").empty();
-		$("#casteller-video").append('<iframe width="560" height="315" src="'+casteller.youtube+'" frameborder="0" allowfullscreen></iframe>');
+		if (casteller.youtube !== '') {
+			$("#casteller-video").empty();
+			//$("#casteller-video").append("<video width='320' height='240' src='videos/"+casteller.video+"' controls autoplay></video>");
+			$("#casteller-video").append('<iframe width="560" height="315" src="'+casteller.youtube+'" frameborder="0" allowfullscreen></iframe>');
 
-		console.log($("#casteller-video"));
-		
-		$("#casteller-name").empty();
-		$("#casteller-name").append(casteller.name);
-		$("#casteller-info").empty();
-		$("#casteller-info").append(casteller.info);
-		$("#casteller-extra-info").empty();
-		$("#casteller-extra-info").append(
-			"<a href="+casteller.wikipedia+" target='_blank'></i>més informació <i class='icon-info'>"
-			);
-		$('#displayModal').click();
+			console.log($("#casteller-video"));
+			
+			$("#casteller-name").empty();
+			$("#casteller-name").append(casteller.name);
+			$("#casteller-info").empty();
+			$("#casteller-info").append(casteller.info);
+			$("#casteller-extra-info").empty();
+			$("#casteller-extra-info").append(
+				"<a href="+casteller.wikipedia+" target='_blank'></i>més informació <i class='icon-info'>"
+				);
+			$('#displayModal').click();
+		}
 	}
 
 }
