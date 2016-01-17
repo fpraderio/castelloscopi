@@ -16,6 +16,10 @@ body
     right: 0;
     padding: 10px;
 }
+#casteller-extra-info {
+	float: right;
+	font-size: 20px;
+}
 #footer
 {
 	position: fixed;
