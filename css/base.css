@@ -5,6 +5,13 @@ body
 	margin: 0px;
 	overflow: hidden;
 }
+#loading
+{
+	position: fixed;
+	left: 0;
+	font-size: 30px;
+	color: #F67171;
+}
 #castelloscopi_virtual
 {
 	position: fixed;

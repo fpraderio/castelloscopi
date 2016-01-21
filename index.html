@@ -50,6 +50,9 @@
 	<h1>castelloscopi virtual</h1>
 	<p>totes les mirades d'un castell</p>
 </div>
+<div id="loading">
+ <i class="icon-cog icon-spin"></i> carregant les animacions
+</div>
 <div id="footer">
 	<p>Si els castells són una activitat integradora accessible per a tothom, el Castelloscopi també!</p>
 	<p>Coneix-ne tots els detalls al web i segueix-ne les diades i tallers a les xarxes socials.</p>
@@ -68,7 +71,11 @@
 <!-- ------------------------------------------------------------ -->
 
 <div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
-
+<script type="text/javascript">
+	$(window).load(function(){
+   $('#loading').remove()
+})
+</script>
 <script type="x-shader/x-vertex" id="vertexShader">
 
 	varying vec3 vWorldPosition;
