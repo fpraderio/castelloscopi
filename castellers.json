@@ -11,9 +11,9 @@
 		"position":{
 			"rotation_y":"1.33333",
 			"rotation_x":"0",
-			"axis_x":"29.99997477",
+			"axis_x":"30",
 			"axis_y":"25",
-			"axis_z":"-51.96153879"
+			"axis_z":"-51.962"
 		}
 	},
     {
@@ -62,9 +62,9 @@
 		"position":{
 			"rotation_y":"0.666667",
 			"rotation_x":"0",
-			"axis_x":"29.99997477",
+			"axis_x":"30",
 			"axis_y":"25",
-			"axis_z":"51.96153879"
+			"axis_z":"51.962"
 		}
 	},
     {
@@ -113,9 +113,9 @@
 		"position":{
 			"rotation_y":"0",
 			"rotation_x":"0",
-			"axis_x":"59.97392787",
+			"axis_x":"60",
 			"axis_y":"25",
-			"axis_z":"1.768608418"
+			"axis_z":"0"
 		}
 	},
     {
@@ -164,9 +164,9 @@
 		"position":{
 			"rotation_y":"1.33333",
 			"rotation_x":"0",
-			"axis_x":"-29.99997477",
+			"axis_x":"-30",
 			"axis_y":"25",
-			"axis_z":"51.96153879"
+			"axis_z":"51.962"
 		}
 	},
     {
@@ -637,9 +637,9 @@
 		"position":{
 			"rotation_y":"0",
 			"rotation_x":"0",
-			"axis_x":"-59.76656662",
+			"axis_x":"-60",
 			"axis_y":"25",
-			"axis_z":"-5.287486646"
+			"axis_z":"0"
 		}
 	},
 	{
@@ -653,9 +653,9 @@
 		"position":{
 			"rotation_y":"0.666667",
 			"rotation_x":"0",
-			"axis_x":"-29.99997477",
+			"axis_x":"-30",
 			"axis_y":"25",
-			"axis_z":"-51.96153879"
+			"axis_z":"-51.962"
 		}
 	},
 	{
